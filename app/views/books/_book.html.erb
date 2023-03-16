@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">
+      <%= book.title %>
+    </h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      <%= book.published_date %>
+    </h6>
+    <p class="card-text">
+      <%= book.description %>
+    </p>
+
+    <div class="option">
+      <%= link_to "Edit", edit_author_book_path(author_id: book.author_id, id: book.id), class: "btn btn-secondary" %> 
+      <%= button_to "Delete", author_book_path(author_id: book.author_id, id: book.id), method: :delete, class: "btn btn-danger" %>
+    </div>
+  </div>
+</div>

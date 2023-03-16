@@ -1,0 +1,9 @@
+<div class="container">
+  <div>
+    <%= link_to "Back to books", author_books_path(@author) %>
+  </div>
+  <h1>New book</h1>
+
+  <%= render "form", book: @book %>
+</div>
+

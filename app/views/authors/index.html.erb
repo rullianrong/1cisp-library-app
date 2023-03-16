@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>List of Authors</h1>
+  <%= link_to "New Author", new_author_path, class: "btn btn-outline-primary" %>
+
+  <div class="author-div">
+    <div id="authors">
+      <% @authors.each do |author| %>
+        <%= render author %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
